@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0B1220">
+
+    <!-- TOP BAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#111827"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WiFi Security AI"
+            android:textColor="#00FFAA"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- DASHBOARD CARDS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/netCount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#1F2937"
+            android:text="0\nNetworks"
+            android:textColor="#00FFAA"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/safeCount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#1F2937"
+            android:text="0\nSafe"
+            android:textColor="#22C55E"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/riskCount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#1F2937"
+            android:text="0\nRisk"
+            android:textColor="#EF4444"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <!-- SCAN BUTTON -->
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dp"
+        android:text="SCAN NETWORKS"
+        android:background="#00FFAA"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <!-- LIST -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#1F2937"
+        android:dividerHeight="1dp"/>
+</LinearLayout>
